@@ -1,0 +1,19 @@
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+
+permalink: /nieuws/:year/:month/:day/:title/
+
+collections:
+  members:
+    output: true
+    permalink: /team/:path/
+
+title: 'Raf Kappers in Huissen'
