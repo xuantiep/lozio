@@ -293,7 +293,7 @@ vertical-align: middle;
   form, .twocols .post-content p {padding-right: 0px;}
 }
 @media all and (max-width: 767px) {
-  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_small.png');}
+  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}
   .navbar-default .navbar-collapse {background: #231f20; border: none;}
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 15px!important;}
   .salon {background-image: url('/img/rafkappers2_small.jpg');}
@@ -303,7 +303,7 @@ vertical-align: middle;
   .desktop {display: none;}
 }
 @media all and (max-width: 450px) {
-  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_smaller.png');}
+  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}
   .salon {max-width: 450px;}
   .salon > div {width: 450px;}
   .salon .circle p {width: 280px;}
