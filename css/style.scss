@@ -52,35 +52,73 @@
 
 
 @font-face {
-    font-family: 'Futura';
-    src: url('/font/futura/futura.eot');
-    src: local('☺'),
-         url('/font/futura/futura.eot?#iefix') format('embedded-opentype'),
-         url('/font/futura/futura.woff') format('woff'),
-         url('/font/futura/futura.ttf') format('truetype'),
-         url('/font/futura/futura.svg#Futura') format('svg');
+    font-family: 'trackregular';
+    src: url('/fonts/track-webfont.eot');
+    src: url('/fonts/track-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/track-webfont.woff2') format('woff2'),
+         url('/fonts/track-webfont.woff') format('woff'),
+         url('/fonts/track-webfont.ttf') format('truetype'),
+         url('/fonts/track-webfont.svg#trackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'trackitalic';
+    src: url('/fonts/track_italic-webfont.eot');
+    src: url('/fonts/track_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/track_italic-webfont.woff2') format('woff2'),
+         url('/fonts/track_italic-webfont.woff') format('woff'),
+         url('/fonts/track_italic-webfont.ttf') format('truetype'),
+         url('/fonts/track_italic-webfont.svg#trackitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Brandon Grotesque - Light, Regular, Bold & Black */
+@font-face {
+    font-family: 'BrandonGrotesque-Light';
+    src: url('/fonts/brandongrotesque-light.eot');
+    src: url('/fonts/brandongrotesque-light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/brandongrotesque-light.woff') format('woff'),
+         url('/fonts/brandongrotesque-light.ttf') format('truetype'),
+         url('/fonts/brandongrotesque-light.svg#brandongrotesque-light') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Futura';
-    src: url('/font/futura/futura-bold.eot');
-    src: local('☺'),
-         url('/font/futura/futura-bold.eot?#iefix') format('embedded-opentype'),
-         url('/font/futura/futura-bold.woff') format('woff'),
-         url('/font/futura/futura-bold.ttf') format('truetype'),
-         url('/font/futura/futura-bold.svg#FuturaBold') format('svg');
-    font-weight: bold;
+    font-family: 'BrandonGrotesque-Regular';
+    src: url('/fonts/brandongrotesque-regular.eot');
+    src: url('/fonts/brandongrotesque-regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/brandongrotesque-regular.woff') format('woff'),
+         url('/fonts/brandongrotesque-regular.ttf') format('truetype'),
+         url('/fonts/brandongrotesque-regular.svg#brandongrotesque-regular') format('svg');
+    font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Futura Medium';
-    src: url('/font/futura/futura-medium-webfont.eot');
-    src: local('☺'),
-         url('/font/futura/futura-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/font/futura/futura-medium-webfont.woff') format('woff'),
-         url('/font/futura/futura-medium-webfont.ttf') format('truetype'),
-         url('/font/futura/futura-medium-webfont.svg#futura-medium-webfont') format('svg');
+    font-family: 'BrandonGrotesque-Bold';
+    src: url('/fonts/brandongrotesque-bold.eot');
+    src: url('/fonts/brandongrotesque-bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/brandongrotesque-bold.woff') format('woff'),
+         url('/fonts/brandongrotesque-bold.ttf') format('truetype'),
+         url('/fonts/brandongrotesque-bold.svg#brandongrotesque-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Black';
+    src: url('/fonts/brandongrotesque-black.eot');
+    src: url('/fonts/brandongrotesque-black.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/brandongrotesque-black.woff') format('woff'),
+         url('/fonts/brandongrotesque-black.ttf') format('truetype'),
+         url('/fonts/brandongrotesque-black.svg#brandongrotesque-black') format('svg');
+    font-weight: normal;
     font-weight: normal;
     font-style: normal;
 }
@@ -92,7 +130,7 @@ html * {max-height:1000000px;}
 
 
 html {overflow-y: scroll;}
-body {color: #231f20; background: #e9e9e0 url('/img/bg_large.jpg') center 76px; font-family: 'Futura', sans-serif; font-size: 18px; line-height: 1.8em;}
+body {color: #231f20; background: #e9e9e0 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 18px; line-height: 1.8em;}
 
 
 #splash {display: none; position: fixed; height: 100%; width: 100%; background: #e9e9e0 url('/img/bg_large.jpg') center top; z-index: 99; cursor: pointer;}
@@ -112,16 +150,16 @@ body {color: #231f20; background: #e9e9e0 url('/img/bg_large.jpg') center 76px; 
 .slider, .slide {position: absolute; width: 100%; height: 600px;}
 
 .light {text-align: center; padding: 90px 0; color: #231f20;}
-.light p a {color: #e9e9e0;}
+.light p a {color: #231f20;}
 .light .post-content {}
-.light .post-content p {color: #e9e9e0;}
+.light .post-content p {color: #231f20;}
 
 .salon {height: 650px; background: url('/img/board.jpg') right center no-repeat; background-size: cover; overflow: hidden;}
 .salon > div {background: rgba(0,0,0,0); position: absolute; width: 100%; overflow: hidden; height: 650px;}
 .salon .circle {
 	text-align: center; 
 	background: #e9e9e0 url('/img/bg_large.jpg') center top; 
-	color: #e9e9e9; 
+	color: #231f20; 
 	height: 500px; 
 	width: 500px; 
 	margin: 75px 0 0 -250px; 
@@ -134,7 +172,7 @@ body {color: #231f20; background: #e9e9e0 url('/img/bg_large.jpg') center 76px; 
 .salon .post-header {padding: 120px 0 0;}
 .salon .post-header h1 {}
 .salon .post-content {}
-.salon .post-content p {color: #e9e9e9;}
+.salon .post-content p {color: #231f20;}
 
 .page-template .salon, .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
@@ -156,7 +194,7 @@ body {color: #231f20; background: #e9e9e0 url('/img/bg_large.jpg') center 76px; 
 }
 
 .behandelingen {padding: 90px 0; color: #231f20;}
-.behandelingen table {width: 100%; color: #e9e9e0;}
+.behandelingen table {width: 100%; color: #231f20;}
 .behandelingen td {padding: 0; font-size: 16px; line-height: 1.8em;}
 .behandelingen tr td:nth-child(1) {padding-left: 50px;}
 .behandelingen tr td:nth-child(3) {width: 100px; text-align: right; padding-right: 50px;}
@@ -170,7 +208,7 @@ footer a, footer a:hover, footer a:focus {color: #231f20;}
 .site-footer .day {float: left; width: 105px;}
 .site-footer2 {font-size: 14px; padding: 15px 0; max-height: 99999px;}
 .site-footer2 .fa {margin-left: 5px; top: -2px; vertical-align: middle;}
-.site-footer2 a, .site-footer2 a:hover, .site-footer2 a:focus {color: #231f20; font-family: 'Futura Medium'; font-weight: normal; text-decoration: none;}
+.site-footer2 a, .site-footer2 a:hover, .site-footer2 a:focus {color: #231f20; font-weight: normal; text-decoration: none;}
 
 .textrow {text-align: center; border-top: 1px solid #91191e; border-bottom: 1px solid #1b6833; background: #e9e9e0; padding: 8px 15px;}
 .navbar {border-radius: 0px!important; font-size: 14px; line-height: 1.4em; height: 107px;}
@@ -203,8 +241,8 @@ footer a, footer a:hover, footer a:focus {color: #231f20;}
 .old_iOS.page-template .navbar-default, 
 .old_iOS .navbar-default.attop {position: absolute;}
 
-h1 {text-transform: uppercase; font-weight: bold; font-size: 30px; letter-spacing: 4px; margin-bottom: 1.1em; margin-top: 0px;}
-h3 {font-weight: bold; font-size: 21px; text-transform: uppercase; letter-spacing: 2px;}
+h1 {font-family: 'trackregular'; text-transform: uppercase; font-weight: normal; font-size: 30px; letter-spacing: 4px; margin-bottom: 1.1em; margin-top: 0px;}
+h3 {font-family: 'trackregular'; font-weight: normal; font-size: 21px; text-transform: uppercase; letter-spacing: 2px;}
 p {margin-bottom: 2em;}
 .post-content h2 {margin-bottom: 0; margin-top: 25px; color: #e9e9e0; font-weight: bold;}
 .post-content ul, 
@@ -216,7 +254,7 @@ a {text-decoration: underline;}
 a:hover {text-decoration: none;}
 .post-content {font-weight: normal;}
 
-.btn {font-size: 16px; line-height: 1.8em; font-family: 'Futura Medium'; color: #e9e9e9; text-decoration: none; padding-left: 25px; padding-right: 25px; border-radius: 0; border: 0; text-transform: uppercase;
+.btn {font-size: 16px; line-height: 1.8em; color: #e9e9e9; text-decoration: none; padding-left: 25px; padding-right: 25px; border-radius: 0; border: 0; text-transform: uppercase;
     -webkit-transition: all 0.2s ease;                  
     -moz-transition: all 0.2s ease;                 
     -o-transition: all 0.2s ease;   
