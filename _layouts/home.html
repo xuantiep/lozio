@@ -15,9 +15,24 @@
           <div id="slide3" class="slide" style="background: url('{{ page.slider[2].image }}') center center no-repeat; background-size: cover;"></div>
         </div>
     </div>
-    <div class="textrow">preheader</div>
+    <div class="textrow">“The trouble with eating Italian food is that five or six days later you're hungry again.”</div>
 
-    <div class="light" id="over-ons">
+
+    <div class="bgimage" id="menu"><div>
+        <div class="container text-center">
+          <article>
+            <header class="post-header">
+              <h1 class="post-title">Menu</h1>
+            </header>
+            <div class="post-content">
+              Food Wine
+            </div>
+          </article>
+        </div>
+    </div></div>
+
+
+    <div class="light" id="catering">
       <div class="container">
         <div class="row">
             <div class="col-lg-2 col-md-1"></div>
@@ -25,11 +40,19 @@
                 <article>
                      
                         <header class="post-header">
-                          <h1 class="post-title editable">Over Raf Kappers</h1>
+                          <h1 class="post-title">Catering</h1>
                         </header>
                       
                         <div class="post-content"><div class="editable"><p>Welkom op de website van Raf Kappers. Wat ik als eigenaar van deze salon het belangrijkste vind, is dat je als klant persoonlijke aandacht krijgt en het gevoel krijgt dat je welkom bent. Wij onderscheiden onszelf door de tijd te nemen voor een behandeling, of je nu komt voor het knippen van je vertrouwde kapsel of een nieuwe coupe, wij willen dat de klant tevreden de deur uitloopt. Huissen is een prettige stad om te wonen en te werken, ik voel mij er thuis en dat gevoel van thuiskomen willen wij onze klanten ook bieden. Kom snel eens langs!</p></div>
+
+                          <div class="row">
+                            <div class="col-md-6"><h2>News</h2><p>Huissen is een prettige stad om te wonen en te werken, ik voel mij er thuis en dat gevoel van thuiskomen willen wij onze klanten ook bieden. Kom snel eens langs!</p></div>
+                            <div class="col-md-6"><h2>Events</h2><p>Welkom op de website van Raf Kappers. Wat ik als eigenaar van deze salon het belangrijkste vind, is dat je als klant persoonlijke aandacht krijgt en het gevoel krijgt dat je welkom bent.</p></div>
+                          </div>
+
                         </div>
+
+
                       
                 </article>
             </div>
@@ -41,54 +64,20 @@
 
 
 
-    <div class="salon" id="openingstijden"><div>
-      <div class="container">
-        <div class="circle">
-          <article>
-            <header class="post-header">
-              <h1 class="post-title">Openingstijden</h1>
-            </header>
-            <div class="post-content">
-              {% include openingstijden.html %}
-            </div>
-        </article></div>
-      </div></div>
-    </div>
 
 
-    <div class="behandelingen" id="behandelingen">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="post-title editable">Behandelingen</h1>
-            </div>
-        </div>
-        <div class="row post-content">
-             <div class="col-sm-6">
-            <table cellpadding="0" cellspacing="0">
-            {% for treatment in site.data.treatments %}
-              <tr><td>{{ treatment.item }}</td><td>&euro;</td><td>{{ treatment.price }}</td></tr>
-              {% if forloop.index == 10 %}</table></div><div class="col-sm-6"><table cellpadding="0" cellspacing="0">{% endif %}
-            {% endfor %}
-            </table>
-            </div>
-            <div class="col-sm-12 text-center">
-            <a href="/#contact" class="btn btn-default" style="margin: 30px 0 15px;">Maak een afspraak</a>
-            </div>
-          </div>
-      </div>
-    </div>
 
-<div class="textrow">preheader</div>
-    <div class="team" id="team">
-      <div class="container">
+<div class="textrow">“First we eat, then we do everything else.”</div>
+
+    <div class="bgimage" id="gallery"><div>
+      <div class="container text-center">
         <article>
         <div class="row">
             <div class="col-md-1 col-lg-2"></div>
             <div class="col-md-10 col-lg-8">
 
                         <header class="post-header">
-                          <h1 class="post-title editable">Team</h1>
+                          <h1 class="post-title editable">Gallery</h1>
                         </header>
             </div>
             <div class="col-md-1 col-lg-2"></div>
@@ -100,32 +89,28 @@
         </div></div>
         </article>
       </div>
-    </div>
+    </div></div>
 
     <div class="light" id="contact">
       <div class="container">
       <article>
         <div class="row">
-            <div class="col-sm-2 col-lg-3"></div>
-            <div class="col-sm-8 col-lg-6">
+            <div class="col-xs-12">
                 
                         <header class="post-header">
                           <h1 class="post-title editable">Contact</h1>
-                          <span style="position: relative; bottom: 30px;">Bel voor een afspraak! Tel: <!--026-325 73 52-->0627189165
-
                         </header>
             </div> 
         </div>
         <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-sm-8 col-lg-6">                            
+            <div class="col-sm-8">                            
                         <div class="post-content"><style type="text/css">
             /* Set a size for our map container, the Google Map will take up 100% of this container */
-            #mapcontainer {height: 195px; overflow: hidden;}
+            #mapcontainer {height: 295px; overflow: hidden;}
             #mapoverlay, #map {
                 margin-top: 0px;
-                width: calc(100% -30px);
-                height: 195px;
+                width: calc(100% - 30px);
+                height: 295px;
                 background: #eee;
             }
             #mapoverlay {position: absolute; top: 0; left: 0; background: transparent}
@@ -178,7 +163,7 @@
         </script>
 <div id="mapcontainer"><div id="map"></div><div id="mapoverlay" style="cursor: pointer;" onclick="window.open('https://www.google.nl/maps/place/Langestraat+62,+6851+AS+Huissen/@51.9390118, 5.9397008');"></div></div><br />                        </div>
             </div>
-            <div class="col-sm-4 col-lg-3 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
+            <div class="col-sm-4 text-left" style="font-size: 16px; line-height: 1.8em;">{% include contactinfo.html %}</div>
           </div>
         </article>
       </div>
