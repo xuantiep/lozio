@@ -154,10 +154,14 @@ body {color: #231f20; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; 
 
 #gallery {background: url(/img/wood.jpg) right center no-repeat; background-size: cover; color: #e6e6e1; border-bottom: 1px solid #91191e;}
 #gallery > div {background: rgba(143,117,83,0.3);}
-
+.gallery_images {overflow: auto; margin-bottom: 10px;}
+.gallery_images a {display: inline-block; margin: 10px; }
+.gallery_images a img {display: inline; width: 200px; border: 1px solid #231f20; }
 
 .page-template .salon, .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
+.contactinfo {line-height: 1.5em; padding-bottom: 20px;}
+.contactinfo  strong {font-family: 'trackregular'; font-weight: normal; font-size: 16px;}
 
 footer p {margin: 0;}
 footer a, footer a:hover, footer a:focus {color: #231f20;}
