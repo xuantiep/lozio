@@ -129,9 +129,9 @@ html * {max-height:1000000px;}
 .post-content p {max-height: 99999px;}
 
 
-html {overflow-y: scroll;}
+html {overflow-y: scroll; height: 100%;}
 body {color: #231f20; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
-
+body, #wrapall {height: 100%;}
 
 #splash {display: none; position: fixed; height: 100%; width: 100%; background: #222; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
