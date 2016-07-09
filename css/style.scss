@@ -166,12 +166,15 @@ footer a, footer a:hover, footer a:focus {color: #231f20;}
 .site-footer2 a, .site-footer2 a:hover, .site-footer2 a:focus {color: #231f20; font-weight: normal; text-decoration: none;}
 
 .textrow {line-height: 1.4em; font-family: 'BrandonGrotesque-Regular', sans-serif; text-transform: uppercase; text-align: center; border-top: 1px solid #91191e; border-bottom: 1px solid #1b6833; background: #e6e6e1; padding: 13px 15px; font-size: 13px; letter-spacing: 1px;}
+.textrow > span.abs {position: absolute; left: 50%; width: 220px; margin-left: -110px; text-align: center;}
+.absright {width: 200px; float: right; height: 18px;}
+.absright > * {float: right;}
+.flag {height: 15px; margin-left: 10px;}
 
 .navbar {border-radius: 0px!important; font-size: 14px; line-height: 1.4em; height: 133px; font-family: 'trackregular'; letter-spacing: 1px;}
 .navbar-default {z-index: 2; position: absolute; width: 100%; background: #e6e6e1 url('/img/bg_large.jpg') center top; border: 0; border-bottom: 1px solid #91191e; text-transform: uppercase;}
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {opacity: 1; text-decoration: none; border-top: 3px solid transparent; color: #231f20; margin: 25px 0 30px 30px; padding: 4px 0;}
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {border-top: 3px solid #231f20;}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {opacity: 1; text-decoration: none; color: #231f20; margin: 28px 0 30px 30px; padding: 4px 0;}
 .navbar-collapse {-webkit-box-shadow: none; box-shadow: none;}
 .navbar-default .navbar-toggle {margin-top: 25px; margin-bottom: 22px;}
 .navbar-default .navbar-toggle .icon-bar {background-color: #231f20;}
@@ -229,7 +232,7 @@ a:hover {text-decoration: none;}
 .btn-default:active:hover, .btn-default:hover, .btn-primary:active:hover, .btn-primary:hover {opacity: 1;}
 .btn:active:hover, .btn:focus, .btn:hover {color: #e6e6e1;}
 
-.fa {font-size: 180%; display: inline-block; cursor: pointer; margin: 0; position: relative; top: 3px;} 
+.fa {font-size: 125%; cursor: pointer; margin: 0 5px 0 0; position: relative; top: 0px; color: #91191e;} 
 .form-group {color: #666;}
 .btn:active {-webkit-box-shadow: none; box-shadow: none;}
 .form-control.error {border-color: red;}
