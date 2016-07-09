@@ -133,10 +133,10 @@ html {overflow-y: scroll; height: 100%;}
 body {color: #231f20; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
 body, #wrapall {height: 100%;}
 
-#splash {display: none; position: fixed; height: 100%; width: 100%; background: #222; z-index: 99; cursor: pointer;}
+#splash {display: none; position: fixed; height: 100%; width: 100%; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
 #splash td {vertical-align: middle; text-align: center;}
-#splash img {width: 75%; max-width: 729px;}
+#splash img {width: 75%; max-width: 600px;}
 
 .intro {height: 600px;}
 .slider {}
@@ -151,28 +151,29 @@ body, #wrapall {height: 100%;}
 
 #menu {background: url(/img/board.jpg) right center no-repeat; background-size: cover; color: white; border-bottom: 1px solid #91191e;}
 #menu > div {background: rgba(33,33,33,0.5);}
+#menu .btn {font-family: 'BrandonGrotesque-Bold';}
 
 #gallery {background: url(/img/wood.jpg) right center no-repeat; background-size: cover; color: white; border-bottom: 1px solid #91191e;}
 #gallery > div {background: rgba(143,117,83,0.3);}
 .gallery_images {overflow: auto; margin-bottom: 10px;}
 .gallery_images a {display: inline-block; margin: 10px; }
-.gallery_images a img {display: inline; width: 200px; border: 1px solid #231f20; }
+.gallery_images a img {display: inline; width: 180px; border: 1px solid #231f20; }
+#gallery #nextbutton, #gallery #prevbutton {color: white; display: inline-block; vertical-align: middle; height: 175px; line-height: 165px; float: none; margin: 0; padding: 0 5px;}
 
 .page-template .salon, .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
 .contactinfo {line-height: 1.5em; padding-bottom: 20px;}
-.contactinfo  strong {font-family: 'trackregular'; font-weight: normal; font-size: 17px;}
+.contactinfo  strong {font-family: 'trackregular'; font-weight: normal; font-size: 14px;}
 
 #map {border: 1px solid #231f20; cursor: pointer; height: 360px; background: url('/img/map.jpg') center center no-repeat; background-size: cover; margin-bottom: 35px;}
 
 footer p {margin: 0;}
 footer a, footer a:hover, footer a:focus {color: #231f20;}
-.site-footer2 {text-transform: none!important; font-size: 15px!important; padding: 11px 0 8px!important; max-height: 99999px; letter-spacing: 0px!important;}
-.site-footer2 .fa {margin-left: 5px; top: -2px; vertical-align: middle;}
+.site-footer2 {text-transform: none!important; font-size: 15px!important; padding: 11px 0 12px!important; max-height: 99999px; letter-spacing: 0px!important;}
 .site-footer2 a, .site-footer2 a:hover, .site-footer2 a:focus {color: #231f20; font-weight: normal; text-decoration: none;}
 
 .textrow {line-height: 1.4em; font-family: 'BrandonGrotesque-Regular', sans-serif; text-transform: uppercase; text-align: center; border-top: 1px solid #91191e; border-bottom: 1px solid #1b6833; background: #e6e6e1; padding: 13px 15px; font-size: 13px; letter-spacing: 1px;}
-.textrow > span.abs {position: absolute; left: 50%; width: 220px; margin-left: -110px; text-align: center;}
+.textrow > span.abs {position: absolute; left: 50%; width: 270px; margin-left: -135px; text-align: center;}
 .absright {width: 200px; float: right; height: 18px;}
 .absright > * {float: right;}
 .flag {height: 15px; margin-left: 10px;}
@@ -206,6 +207,7 @@ footer a, footer a:hover, footer a:focus {color: #231f20;}
 .old_iOS .navbar-default.attop {position: absolute;}
 
 h1, h2 {font-family: 'trackregular'; text-transform: uppercase; font-weight: normal; font-size: 21px; letter-spacing: 1px; margin-bottom: 1.1em; margin-top: 0px;}
+h2 {font-size: 17px;}
 h1:after, h2:after {
   content: url(/img/italia.svg);
   display: block;
@@ -234,11 +236,11 @@ a:hover {text-decoration: none;}
 .btn-default:active:hover, .btn-default:focus, .btn-default:hover, .btn-default {opacity: 1; border: 1px solid #e6e6e1!important; background: transparent; color: #231f20; -webkit-box-shadow: none; box-shadow: none;}
 .btn-default:active:hover, .btn-default:focus, .btn-default:hover {background: #231f20; border-color: #231f20!important;}
 .btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover, .btn-primary {opacity: 1; border: 1px solid #e6e6e1!important; background: #e6e6e1; color: #231f20;; -webkit-box-shadow: none; box-shadow: none;}
-.btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover {background: transparent; color: #231f20!important; border-color: #e6e6e1!important;}
+.btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover {background: transparent; color: #e6e6e1!important; border-color: #e6e6e1!important;}
 .btn-default:active:hover, .btn-default:hover, .btn-primary:active:hover, .btn-primary:hover {opacity: 1;}
 .btn:active:hover, .btn:focus, .btn:hover {color: #e6e6e1;}
 
-.fa {font-size: 125%; cursor: pointer; margin: 0 5px 0 0; position: relative; top: 0px; color: #91191e;} 
+.fa {font-size: 110%; cursor: pointer; margin: 0 5px 0 0; position: relative; bottom: 1px; color: #91191e;} 
 .form-group {color: #666;}
 .btn:active {-webkit-box-shadow: none; box-shadow: none;}
 .form-control.error {border-color: red;}
@@ -250,18 +252,19 @@ form {padding-right: 30px; clear: both;}
 label {font-weight: normal;}
 .post-content img, .post-content iframe {max-width: 100%;}
 
-#lightbox {cursor: pointer; display: none; z-index: 99; position: fixed; top: 0; left: 0; background: #222 url('/img/preloader.gif') center center no-repeat; text-align: center;}
-#lightbox #image {z-index: 0; display: inline; max-height: 95vh; max-width: 95vw;}
-#nextbutton {color: #e9e9e9; float: right; width: 50px; height: 50px; line-height: 45px; margin-right: 2.5vw; font-size: 50px;}
-#prevbutton {color: #e9e9e9; float: left; width: 50px; height: 50px; line-height: 45px; margin-left: 2.5vw; font-size: 50px;}
-#closebutton {color: #e9e9e9; position: absolute; top: 2vh; right: 2.5vw; width: 50px; height: 50px; line-height: 50px; margin-left: 2.5vw; font-size: 20px; font-weight: normal;}
+#lightbox {display: none; z-index: 99; position: fixed; top: 0; left: 0; text-align: center;}
+#lightbox #image {z-index: 0; display: inline; max-height: 95vh; max-width: 95vw; border: 1px solid #231f20;}
+#nextbutton {color: #231f20; float: right; width: 50px; height: 50px; line-height: 45px; margin-right: 2.5vw; font-size: 50px;}
+#prevbutton {color: #231f20; float: left; width: 50px; height: 50px; line-height: 45px; margin-left: 2.5vw; font-size: 50px;}
+#closebutton {text-transform: uppercase; font-family: 'BrandonGrotesque-Bold'; color: #231f20; position: absolute; top: 2vh; right: 2.5vw; width: 50px; height: 60px; line-height: 60px; margin-left: 2.5vw; font-size: 16px; font-weight: normal;}
 #controls {height: 50px; top: 50%; position: fixed; margin-top: -25px; width: 100%;}
-#controls a {color: #e9e9e9; text-decoration: none;}
+#controls a {color: #231f20; text-decoration: none;}
 #controls a:hover, #controls a:active {color: silver;}
+#closebutton, #prevbutton, #nextbutton {cursor: pointer; }
 
 
 
-#wrapall, .navbar > div {background: rgba(230,230,225,0.5);}
+#wrapall, .navbar > div, #lightbox, #splash table {background: rgba(230,230,225,0.5);}
 
 @media all and (max-width: 1199px) {
 .behandelingen .sidebar {padding-left: 0!important; border-left: 0!important;}

@@ -1,25 +1,3 @@
-function showslide(el,now) {
-	if($('body').hasClass('Android') || $('body').hasClass('iOS')) {
-		el.fadeIn().delay(9000).hide(0, function() {
-		if(el.next().is('article')) showslide(el.next(),false);
-		else showslide($('.highlight article').first(),false);
-		});
-	}
-	else {
-		if (now) {
-			el.show().delay(9000).fadeOut(300, function() {
-			if(el.next().is('article')) showslide(el.next(),false);
-			else showslide($('.highlight article').first(),false);
-		    });
-		}
-		else {
-			el.delay(300).animate( { height: "toggle" }, 1000, 'swing').delay(9000).fadeOut(300, function() {
-			if(el.next().is('article')) showslide(el.next(),false);
-			else showslide($('.highlight article').first(),false);
-		    });
-		}
-	}
-}
 function slide() {
 	$('.slider div:last-child').fadeOut(1000, function () {
 		$('.slider').prepend($('.slider div:last-child'));
@@ -45,32 +23,6 @@ function get_cookie(Name) {
 }
 function set_cookie(what){
     document.cookie="splashshown="+what
-}
-function nextmember() {
-		//append the first one
-		$('.ch-grid').append($('.ch-grid li:first'));
-		if($(window).width()>991) { 
-    		//load all images
-    		$('.ch-grid li').css('display','inline-block');
-    		//fade the last visible (fourth) image in on desktop
-    		$('.ch-grid li:nth-child(4)').css({
-            opacity: 0,
-            display: 'inline-block'     
-            }).animate({opacity:1},600);
-		}
-}
-function prevmember() {
-		//prepend the last one and fade in
-		$('.ch-grid').prepend($('.ch-grid li:last')); 
-		if($(window).width()>991) { 
-    		//load all images
-    		$('.ch-grid li').css('display','inline-block');
-    		//fade the first image in on desktop
-    		$('.ch-grid li:nth-child(1)').css({
-            opacity: 0,
-            display: 'inline-block'     
-            }).animate({opacity:1},600);
-		}
 }
 function iOSversion(useragent) {
   if (/iP(hone|od|ad|od Touch)/.test(useragent)) {
@@ -146,8 +98,6 @@ $( document ).ready(function() {
 	  if($(window).scrollTop()) $( ".arrow" ).hide(  );
 	  else if(!$('body').hasClass('touch')) $( ".arrow" ).show( );
 	});
-	
-	showslide($('.highlight article').first(),true);
 	
 	$('a').click(function(){
 		if($('body').hasClass('home') && $(this).attr('href')) {
