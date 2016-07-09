@@ -129,9 +129,9 @@ html * {max-height:1000000px;}
 .post-content p {max-height: 99999px;}
 
 
-html {overflow-y: scroll;}
-body {color: #231f20; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.6em;}
-
+html {overflow-y: scroll; height: 100%;}
+body {color: #231f20; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
+body, #wrapall {height: 100%;}
 
 #splash {display: none; position: fixed; height: 100%; width: 100%; background: #222; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
@@ -149,15 +149,21 @@ body {color: #231f20; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; 
 
 .bgimage > div {padding: 60px 0;}
 
-#menu {background: url(/img/board.jpg) right center no-repeat; background-size: cover; color: #e6e6e1; border-bottom: 1px solid #91191e;}
+#menu {background: url(/img/board.jpg) right center no-repeat; background-size: cover; color: white; border-bottom: 1px solid #91191e;}
 #menu > div {background: rgba(33,33,33,0.5);}
 
-#gallery {background: url(/img/wood.jpg) right center no-repeat; background-size: cover; color: #e6e6e1; border-bottom: 1px solid #91191e;}
+#gallery {background: url(/img/wood.jpg) right center no-repeat; background-size: cover; color: white; border-bottom: 1px solid #91191e;}
 #gallery > div {background: rgba(143,117,83,0.3);}
-
+.gallery_images {overflow: auto; margin-bottom: 10px;}
+.gallery_images a {display: inline-block; margin: 10px; }
+.gallery_images a img {display: inline; width: 200px; border: 1px solid #231f20; }
 
 .page-template .salon, .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
+.contactinfo {line-height: 1.5em; padding-bottom: 20px;}
+.contactinfo  strong {font-family: 'trackregular'; font-weight: normal; font-size: 17px;}
+
+#map {border: 1px solid #231f20; cursor: pointer; height: 360px; background: url('/img/map.jpg') center center no-repeat; background-size: cover; margin-bottom: 35px;}
 
 footer p {margin: 0;}
 footer a, footer a:hover, footer a:focus {color: #231f20;}
