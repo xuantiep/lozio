@@ -99,6 +99,7 @@ $( document ).ready(function() {
 	  else if(!$('body').hasClass('touch')) $( ".arrow" ).show( );
 	});
 	
+	/*
 	$('a').click(function(){
 		if($('body').hasClass('home') && $(this).attr('href')) {
 			el = $.attr(this, 'href').replace('/','');
@@ -110,7 +111,7 @@ $( document ).ready(function() {
 			    return false;
 			}
 		}
-	});
+	});*/
 	
 	$('#splash').click(function() {
 		$(this).hide();
