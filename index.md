@@ -1,9 +1,9 @@
 ---
 layout: home
 slider:
-  - image: /img/interior.png
+  - image: /img/interior.jpg
   - image: /img/food.jpg
-  - image: /img/interior.png
+  - image: /img/interior.jpg
 highlights:
   - title: Nieuwe locatie
     text: 'Sinds 1 juli zijn wij gevestigd aan de Langestraat 62 in Huissen. Na een maandenlange verbouwing zijn wij trots op het bereikte resultaat. Nieuwsgierig geworden? Je bent van harte welkom om een kijkje te komen nemen!'
