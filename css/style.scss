@@ -161,6 +161,16 @@ body, #wrapall {height: 100%;}
 #gallery {background: url(/img/wood.jpg) right center no-repeat; background-size: cover; color: white; border-bottom: 1px solid #91191e;}
 #gallery > div {background: rgba(143,117,83,0.3);}
 .gallery_images {overflow: hidden; margin-bottom: 10px; white-space: nowrap;}
+.gallery_images * {  
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+.gallery_images > div {display: inline-block;}
 .gallery_images a {display: inline-block; margin: 10px; }
 .gallery_images a img {display: inline; width: 180px; border: 1px solid #231f20; }
 #gallery #nextbutton, #gallery #prevbutton {color: white; display: inline-block; vertical-align: middle; height: 175px; line-height: 165px; float: none; margin: 0; padding: 0 5px;}
@@ -285,23 +295,20 @@ label {font-weight: normal;}
 @media all and (max-width: 1199px) {
 .behandelingen .sidebar {padding-left: 0!important; border-left: 0!important;}
   .gallery_images a {display: none;}
-  .gallery_images a:first-child {display: inline-block;}
-  .gallery_images a:nth-child(2) {display: inline-block;}
-  .gallery_images a:nth-child(3) {display: inline-block;}
-  .gallery_images a:nth-child(4) {display: inline-block;}
-  .gallery_images a:nth-child(5) {display: inline-block;}
-  .gallery_images a:last-child {display: inline-block;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: inline-block;}
+  .gallery_images > div a:nth-child(3) {display: inline-block;}
+  .gallery_images > div a:nth-child(4) {display: inline-block;}
 }
 
 @media all and (max-width: 991px) {
   form, .twocols .post-content p {padding-right: 0px;}
   .gallery_images a {display: none;}
-  .gallery_images a:first-child {display: inline-block;}
-  .gallery_images a:nth-child(2) {display: inline-block;}
-  .gallery_images a:nth-child(3) {display: inline-block;}
-  .gallery_images a:nth-child(4) {display: inline-block;}
-  .gallery_images a:nth-child(5) {display: none;}
-  .gallery_images a:last-child {display: inline-block;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: inline-block;}
+  .gallery_images > div a:nth-child(3) {display: inline-block;}
+  .gallery_images > div a:nth-child(4) {display: none;}
+
 }
 @media all and (max-width: 767px) {
   body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}
@@ -309,12 +316,10 @@ label {font-weight: normal;}
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 15px!important;}
   .salon {background-image: url('/img/rafkappers2_small.jpg');}
   .gallery_images a {display: none;}
-  .gallery_images a:first-child {display: inline-block;}
-  .gallery_images a:nth-child(2) {display: inline-block;}
-  .gallery_images a:nth-child(3) {display: inline-block;}
-  .gallery_images a:nth-child(4) {display: none;}
-  .gallery_images a:nth-child(5) {display: none;}
-  .gallery_images a:last-child {display: inline-block;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: inline-block;}
+  .gallery_images > div a:nth-child(3) {display: none;}
+  .gallery_images > div a:nth-child(4) {display: none;}
 }
 @media all and (max-width: 600px) {
   .mobile {display: inline-block;}
@@ -322,12 +327,10 @@ label {font-weight: normal;}
 }
 @media all and (max-width: 545px) {
   .gallery_images a {display: none;}
-  .gallery_images a:first-child {display: inline-block;}
-  .gallery_images a:nth-child(2) {display: inline-block;}
-  .gallery_images a:nth-child(3) {display: none;}
-  .gallery_images a:nth-child(4) {display: none;}
-  .gallery_images a:nth-child(5) {display: none;}
-  .gallery_images a:last-child {display: inline-block;}
+  .gallery_images > div a:nth-child(1) {display: inline-block;}
+  .gallery_images > div a:nth-child(2) {display: none;}
+  .gallery_images > div a:nth-child(3) {display: none;}
+  .gallery_images > div a:nth-child(4) {display: none;}
 }
 @media all and (max-width: 450px) {
   body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}

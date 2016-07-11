@@ -4,6 +4,13 @@ function slide() {
 		$('.slider > div ').show();
 	});
 }
+function gallerynext() {
+	$('.gallery_images > div').append($('.gallery_images > div a:nth-child(1)'));
+}
+function galleryprev() {
+	$('.gallery_images > div').prepend($('.gallery_images > div a:nth-child(5)'));
+}
+
 function get_cookie(Name) {
     var search = Name + "="
     var returnvalue = "";
