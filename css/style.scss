@@ -138,7 +138,7 @@ body, #wrapall {height: 100%;}
 .page-template .salon, 
 .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
-#splash {display: none; position: fixed; height: 100%; width: 100%; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; z-index: 99; cursor: pointer;}
+#splash {display: none; position: fixed; height: 100%; width: 100%; background: #222 center 76px; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
 #splash td {vertical-align: middle; text-align: center;}
 #splash img {width: 75%; max-width: 600px;}
@@ -160,7 +160,7 @@ body, #wrapall {height: 100%;}
 
 #gallery {background: url(/img/wood.jpg) right center no-repeat; background-size: cover; color: white; border-bottom: 1px solid #91191e;}
 #gallery > div {background: rgba(143,117,83,0.3);}
-.gallery_images {overflow: auto; margin-bottom: 10px;}
+.gallery_images {overflow: hidden; margin-bottom: 10px; white-space: nowrap;}
 .gallery_images a {display: inline-block; margin: 10px; }
 .gallery_images a img {display: inline; width: 180px; border: 1px solid #231f20; }
 #gallery #nextbutton, #gallery #prevbutton {color: white; display: inline-block; vertical-align: middle; height: 175px; line-height: 165px; float: none; margin: 0; padding: 0 5px;}
@@ -280,33 +280,56 @@ label {font-weight: normal;}
 
 
 
-#wrapall, .navbar > div, #lightbox, #splash table {background: rgba(230,230,225,0.5);}
+#wrapall, .navbar > div, #lightbox {background: rgba(230,230,225,0.5);}
 
 @media all and (max-width: 1199px) {
 .behandelingen .sidebar {padding-left: 0!important; border-left: 0!important;}
+  .gallery_images a {display: none;}
+  .gallery_images a:first-child {display: inline-block;}
+  .gallery_images a:nth-child(2) {display: inline-block;}
+  .gallery_images a:nth-child(3) {display: inline-block;}
+  .gallery_images a:nth-child(4) {display: inline-block;}
+  .gallery_images a:nth-child(5) {display: inline-block;}
+  .gallery_images a:last-child {display: inline-block;}
 }
 
 @media all and (max-width: 991px) {
   form, .twocols .post-content p {padding-right: 0px;}
+  .gallery_images a {display: none;}
+  .gallery_images a:first-child {display: inline-block;}
+  .gallery_images a:nth-child(2) {display: inline-block;}
+  .gallery_images a:nth-child(3) {display: inline-block;}
+  .gallery_images a:nth-child(4) {display: inline-block;}
+  .gallery_images a:nth-child(5) {display: none;}
+  .gallery_images a:last-child {display: inline-block;}
 }
 @media all and (max-width: 767px) {
   body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}
   .navbar-default .navbar-collapse {background: #231f20; border: none;}
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 15px!important;}
   .salon {background-image: url('/img/rafkappers2_small.jpg');}
+  .gallery_images a {display: none;}
+  .gallery_images a:first-child {display: inline-block;}
+  .gallery_images a:nth-child(2) {display: inline-block;}
+  .gallery_images a:nth-child(3) {display: inline-block;}
+  .gallery_images a:nth-child(4) {display: none;}
+  .gallery_images a:nth-child(5) {display: none;}
+  .gallery_images a:last-child {display: inline-block;}
 }
 @media all and (max-width: 600px) {
   .mobile {display: inline-block;}
   .desktop {display: none;}
 }
+@media all and (max-width: 545px) {
+  .gallery_images a {display: none;}
+  .gallery_images a:first-child {display: inline-block;}
+  .gallery_images a:nth-child(2) {display: inline-block;}
+  .gallery_images a:nth-child(3) {display: none;}
+  .gallery_images a:nth-child(4) {display: none;}
+  .gallery_images a:nth-child(5) {display: none;}
+  .gallery_images a:last-child {display: inline-block;}
+}
 @media all and (max-width: 450px) {
   body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}
-  .salon {max-width: 450px;}
-  .salon > div {width: 450px;}
-  .salon .circle p {width: 280px;}
-  .salon .circle p .time {width: 140px;}
-  .salon .circle p .day {width: 140px;}
   .salon {background-image: url('/img/rafkappers2_smaller.jpg');}
-  .behandelingen tr td:nth-child(1) {padding-left: 0px;}
-  .behandelingen tr td:nth-child(3) {padding-right: 0px;}
 }
