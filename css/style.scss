@@ -217,8 +217,8 @@ footer a, footer a:hover, footer a:focus {color: #222222;}
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {color: #222222;}
 .navmenu-nav {margin-top: 16px; font-size: 27px; line-height: 1.4em;}
 .navmenu, .navbar-offcanvas {width: 380px;}
-.navmenu img {width: 200px; margin: 20px 15px;}
-
+.navmenu img {width: 200px; margin: 20px 30px;}
+.nav>li>a {padding: 10px 30px;}
 .navbar-default .navbar-nav>.active a:after {
   content: url(/img/italia.svg);
   display: block;
