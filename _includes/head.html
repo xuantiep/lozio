@@ -59,7 +59,7 @@ function goNext(e) {
     }
     if(current<(imgArray.length-1)) next = (current+1);
     else next = 0;
-    window.location = '/?url='+imgArray[next];
+    window.location = '{{ page.url | remove: 'index.html' }}?url='+imgArray[next];
 }
 function goPrev(e) {
     if (!e)
@@ -82,7 +82,7 @@ function goPrev(e) {
     }    
     if(current>0) prev = (current-1);
     else prev = (imgArray.length-1);
-    window.location = '/?url='+imgArray[prev];
+    window.location = '{{ page.url | remove: 'index.html' }}?url='+imgArray[prev];
 }
 	</script>
 	{% include ga.html %}
