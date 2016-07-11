@@ -162,5 +162,20 @@ $( document ).ready(function() {
         	}
         }); 
     });
+    /* SCROLLSPY NAVBAR */
+    $('#navbar').on('activate.bs.scrollspy', function (e) {
+    	alert('test');
+        $pageTitle = $(e.target).children("a").text();
+        $pagehref = $(e.target).children("a").attr('href').replace("#","").replace("/","");
+        if( $("#header").attr('class') != $pagehref){
+            $('.navbar li a').blur();
+            $("#header").removeClass().addClass($pagehref);
+        }
+        function delayupdate(){
+            history.pushState({}, $pageTitle , '#'+$pagehref)
+        };
+        setTimeout(delayupdate,500)
+    });
+
     setInterval(function(){ slide(); }, 6000);
 });
