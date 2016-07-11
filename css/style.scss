@@ -193,8 +193,10 @@ footer a, footer a:hover, footer a:focus {color: #222222;}
 
 .textrow {min-height: 46px; line-height: 1.4em; font-family: 'BrandonGrotesque-Regular', sans-serif; text-transform: uppercase; text-align: center; border-top: 1px solid #91191e; border-bottom: 1px solid #1b6833; background: #e6e6e1; padding: 13px 15px; font-size: 13px; letter-spacing: 1px;}
 .textrow > span.abs {position: absolute; left: 50%; width: 270px; margin-left: -135px; text-align: center;}
+.textrow > div {max-width: 1140px; margin: 0 auto;}
 .absright {width: 200px; float: right; height: 18px;}
-.absright > * {float: right;}
+.absright > * {float: right; display: block;}
+.absright > * > img {display: block;}
 .flag {height: 15px; margin-left: 10px;}
 
 .navbar {border-radius: 0px!important; font-size: 14px; line-height: 1.4em; height: 133px; font-family: 'trackregular'; letter-spacing: 1px;}
@@ -257,7 +259,7 @@ p {margin-bottom: 2em;}
 a {text-decoration: underline;}
 a:hover {text-decoration: none;}
 .post-content {font-weight: normal;}
-
+.post-header span {margin-bottom: 10px; display: inline-block;}
 .btn {font-size: 16px; line-height: 1.8em; color: #e6e6e1; text-decoration: none; padding-left: 25px; padding-right: 25px; border-radius: 0; border: 0; text-transform: uppercase; font-family: 'BrandonGrotesque-Bold';
     -webkit-transition: all 0.2s ease;                  
     -moz-transition: all 0.2s ease;                 
