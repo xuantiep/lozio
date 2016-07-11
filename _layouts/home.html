@@ -3,12 +3,12 @@
 
   {% include head.html %}
 
-  <body data-spy="scroll" data-target="#navbar" data-offset="50" class="home" id="top" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
+  <body data-spy="scroll" data-target="#navbar" data-offset="10" class="home" onload="if(getParameterByName('url')) setimage('url'); {% assign num_images = page.images | size %}{% if num_images <= 1 %}document.getElementById('controls').style.display='none';{% endif %}">
   <div id="splash"><table cellpadding="0" cellspacing="0"><tr><td><img src="/img/logofull.svg" /></td></tr></table></div>
   <div id="nonsplash">
   <script>document.getElementById('nonsplash').style.display = 'none';</script>
     {% include header.html %}
-    <div class="intro">
+    <div id="top" class="intro">
         <div class="slider">
           <div id="slide1" class="slide" style="background: url('{{ page.slider[0].image }}') center center no-repeat; background-size: cover;"></div>
           <div id="slide2" class="slide" style="background: url('{{ page.slider[1].image }}') center center no-repeat; background-size: cover;"></div>

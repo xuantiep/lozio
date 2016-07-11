@@ -99,19 +99,21 @@ $( document ).ready(function() {
 	  else if(!$('body').hasClass('touch')) $( ".arrow" ).show( );
 	});
 	
-	/*
-	$('a').click(function(){
+	//make anchor tags scroll
+	$('.navbar a').click(function(){
 		if($('body').hasClass('home') && $(this).attr('href')) {
 			el = $.attr(this, 'href').replace('/','');
-			if(el!='#') {
-			    $('html, body').animate({
-			        scrollTop: $( el ).offset().top-$( ".navbar-default" ).height()
-			    }, 500);
-			    if($('.navmenu.offcanvas').hasClass('in')) $('.navbar-toggle').click();
-			    return false;
-			}
+		    $('html, body').animate({
+		        scrollTop: $( el ).offset().top
+		    }, 500);
+		    if($('.navmenu.offcanvas').hasClass('in')) $('.navbar-toggle').click();
+		    return false;
 		}
-	});*/
+		else if (!$('body').hasClass('home')) {
+			if($(this).attr('href').charAt(0)!='/') $(this).attr('href', '/'+$(this).attr('href'));
+		}
+	});
+
 	
 	$('#splash').click(function() {
 		$(this).hide();
@@ -165,7 +167,6 @@ $( document ).ready(function() {
     });
     /* SCROLLSPY NAVBAR */
     $('#navbar').on('activate.bs.scrollspy', function (e) {
-    	alert('test');
         $pageTitle = $(e.target).children("a").text();
         $pagehref = $(e.target).children("a").attr('href').replace("#","").replace("/","");
         if( $("#header").attr('class') != $pagehref){

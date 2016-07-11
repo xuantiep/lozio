@@ -36,12 +36,12 @@ if(getParameterByName('url')) {
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="hidden-sm"><a href="/#top">Home</a></li>
-              <li><a href="/#menu">Menu</a></li>
-              <li><a href="/#catering">Catering</a></li>
-              <li><a href="/#gallery">Gallery</a></li>
+              <li class="hidden-sm"><a href="#top">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#catering">Catering</a></li>
+              <li><a href="#gallery">Gallery</a></li>
               <li {% if page.url == '/about/' %}class="active"{% endif %}><a href="/about/">About us</a></li>
-              <li><a href="/#contact">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
               <li {% if page.layout == 'post' or page.layout == 'blog' %}class="active"{% endif %}><a href="/blog/">Blog</a></li>
             </ul>
           </div><!--/.nav-collapse -->
