@@ -334,10 +334,9 @@ label {font-weight: normal;}
   .gallery_images > div a:nth-child(5) {display: none;}
 }
 @media all and (max-width: 767px) {
-  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}
   .navbar-default .navbar-collapse {background: #222222; border: none;}
   .navbar-default .navbar-brand {margin: 5px 15px!important;}
-  .salon {background-image: url('/img/rafkappers2_small.jpg');}
+  .post .salon > div {background-image: url('/img/interior.png');}
   .gallery_images a {display: none;}
   .gallery_images > div a:nth-child(1) {display: inline-block;}
   .gallery_images > div a:nth-child(2) {display: inline-block;}
@@ -358,6 +357,5 @@ label {font-weight: normal;}
   .gallery_images > div a:nth-child(5) {display: none;}
 }
 @media all and (max-width: 450px) {
-  body, #splash, .navbar-default, .salon .circle {background-image: url('/img/bg_large.jpg');}
-  .salon {background-image: url('/img/rafkappers2_smaller.jpg');}
+  .post .salon > div {background-image: url('/img/interior.png');}
 }
