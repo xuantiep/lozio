@@ -7,7 +7,7 @@
 	  {% include header.html %}
     <div class="salon"><div></div></div>
 
-    <div class="twocols">
+    <div class="light">
       <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 text-center">
@@ -19,6 +19,8 @@
                         <div class="post-content">
                         {{ content }}
                         <p>{% for post in site.posts %}{{ post.date | date: "%d/%m/%Y" }} - <a href="{{ post.url }}">{{ post.title }}</a><br />{% endfor %}</p>
+
+                        <p><a href="/">&larr; Terug naar de homepage</a></p>
                         </div>
                 </article>
             </div>

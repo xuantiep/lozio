@@ -133,6 +133,11 @@ html {overflow-y: scroll; height: 100%;}
 body {color: #231f20; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
 body, #wrapall {height: 100%;}
 
+.post .salon {padding-top: 132px; height: 372px!important;}
+.post .salon > div {background: url('/img/interior.png') center center no-repeat; background-size: cover; border-bottom: 1px solid #91191e;}
+.page-template .salon, 
+.page-template .salon > div {height: 240px; background-attachment: scroll;}
+
 #splash {display: none; position: fixed; height: 100%; width: 100%; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; z-index: 99; cursor: pointer;}
 #splash table {height: 100%; width: 100%;}
 #splash td {vertical-align: middle; text-align: center;}
@@ -160,7 +165,6 @@ body, #wrapall {height: 100%;}
 .gallery_images a img {display: inline; width: 180px; border: 1px solid #231f20; }
 #gallery #nextbutton, #gallery #prevbutton {color: white; display: inline-block; vertical-align: middle; height: 175px; line-height: 165px; float: none; margin: 0; padding: 0 5px;}
 
-.page-template .salon, .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
 .contactinfo {line-height: 1.5em; padding-bottom: 20px;}
 .contactinfo  strong {font-family: 'trackregular'; font-weight: normal; font-size: 14px;}
@@ -221,7 +225,7 @@ p {margin-bottom: 2em;}
 .post-content ol {margin-bottom: 2em; color: #e6e6e1;}
 .featured-image img {margin-top: 10px; max-width: 100%;}
 
-.post-content p a {color: #e6e6e1;}
+.post-content p a {color: #231f20;}
 a {text-decoration: underline;}
 a:hover {text-decoration: none;}
 .post-content {font-weight: normal;}
