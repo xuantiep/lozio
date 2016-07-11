@@ -242,14 +242,14 @@ a {text-decoration: underline;}
 a:hover {text-decoration: none;}
 .post-content {font-weight: normal;}
 
-.btn {font-size: 16px; line-height: 1.8em; color: #e6e6e1; text-decoration: none; padding-left: 25px; padding-right: 25px; border-radius: 0; border: 0; text-transform: uppercase;
+.btn {font-size: 16px; line-height: 1.8em; color: #e6e6e1; text-decoration: none; padding-left: 25px; padding-right: 25px; border-radius: 0; border: 0; text-transform: uppercase; font-family: 'BrandonGrotesque-Bold';
     -webkit-transition: all 0.2s ease;                  
     -moz-transition: all 0.2s ease;                 
     -o-transition: all 0.2s ease;   
     -ms-transition: all 0.2s ease;          
     transition: all 0.2s ease;
 }
-.btn-default:active:hover, .btn-default:focus, .btn-default:hover, .btn-default {opacity: 1; border: 1px solid #e6e6e1!important; background: transparent; color: #231f20; -webkit-box-shadow: none; box-shadow: none;}
+.btn-default:active:hover, .btn-default:focus, .btn-default:hover, .btn-default {opacity: 1; border: 1px solid #231f20!important; background: transparent; color: #231f20; -webkit-box-shadow: none; box-shadow: none;}
 .btn-default:active:hover, .btn-default:focus, .btn-default:hover {background: #231f20; border-color: #231f20!important;}
 .btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover, .btn-primary {opacity: 1; border: 1px solid #e6e6e1!important; background: #e6e6e1; color: #231f20;; -webkit-box-shadow: none; box-shadow: none;}
 .btn-primary:active:hover, .btn-primary:focus, .btn-primary:hover {background: transparent; color: #e6e6e1!important; border-color: #e6e6e1!important;}
