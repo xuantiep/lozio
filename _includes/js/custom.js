@@ -43,6 +43,19 @@ $(window).on('orientationchange', function(e) {
 	window.location.reload();
 });
 
+$(window).resize(function(){
+	if($(window).height()>$('#wrapall').height()) {
+		$('#wrapall').css('height',$(window).height()+'px');
+		$('footer').css('position','absolute');
+		$('footer').css('bottom','0');
+		$('footer').css('width','100%');
+	} else {
+		$('footer').css('position','static');
+		$('footer').css('bottom','auto');
+		$('footer').css('width','auto');
+	}
+});
+
 $( document ).ready(function() {
 	if($(window).height()<500) {
 		$('body').addClass('low_height');
@@ -187,4 +200,5 @@ $( document ).ready(function() {
     });
 
     setInterval(function(){ slide(); }, 6000);
+    $(window).resize();
 });

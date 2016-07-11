@@ -131,7 +131,6 @@ html * {max-height:1000000px;}
 
 html {overflow-y: scroll; height: 100%;}
 body {color: #222222; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
-body, #wrapall {height: 100%;}
 
 .post .salon {padding-top: 132px; height: 372px!important;}
 .post .salon > div {background: url('/img/interior.png') center center no-repeat; background-size: cover; border-bottom: 1px solid #91191e;}
@@ -144,10 +143,14 @@ body, #wrapall {height: 100%;}
 #splash img {width: 75%; max-width: 600px;}
 
 .intro {height: 600px;}
-.slider {}
 .slider, .slide {position: absolute; width: 100%; height: 600px;}
+#reservation {font-size: 14px; line-height: 2.5em; position: absolute; top: 200px; right: 0; z-index: 1; width: 125px; color: white; font-family: 'BrandonGrotesque-Bold'; background: #91191e; text-align: center; text-decoration: none; text-transform: uppercase;}
+#foodora {position: absolute; top: 240px; right: 0; z-index: 1; width: 125px; background: #d7196b; text-align: center; }
+#foodora img {width: 93px; display: inline-block; margin: 7px 0 9px;}
 
 .light {text-align: center; padding: 60px 0 40px; color: #222222;}
+.light.extras:before {margin-top: 40px; content: ""; background: url('/img/left.png') left center no-repeat; background-size: contain; height: 300px; width: 300px; position: absolute; left: 0;}
+.light.extras > div:before {margin-top: 40px; content: ""; background: url('/img/right.png') right center no-repeat; background-size: contain; height: 300px; width: 450px; position: absolute; right: 0;}
 .light p a {color: #222222;}
 .light .post-content {}
 .light .post-content p {color: #222222;}
@@ -254,8 +257,14 @@ p {margin-bottom: 2em;}
 .post-content ul, 
 .post-content ol {margin-bottom: 2em; color: #e6e6e1;}
 .featured-image img {margin-top: 10px; max-width: 100%;}
-
 .post-content p a {color: #222222;}
+
+form .form-group {color: #222222; margin-bottom: 8px;} 
+form .form-control {border-radius: 0; border: 1px solid #91191e!important; font-size: 16px; color: #222; max-width: 100%;}
+form .btn-default {border: 1px solid #91191e!important; background-color: #91191e!important; color: #fff;}
+form .btn-default:hover {border: 1px solid #91191e!important; color: #fff;}
+form.form-horizontal .control-label {padding-top: 5px!important;}
+
 a {text-decoration: underline;}
 a:hover {text-decoration: none;}
 .post-content {font-weight: normal;}
@@ -299,6 +308,11 @@ label {font-weight: normal;}
 
 
 #wrapall, .navbar > div, #lightbox {background: rgba(230,230,225,0.5);}
+
+@media all and (max-width: 1700px) {
+.light.extras:before {content: none;}
+.light.extras > div:before {content: none;}
+}
 
 @media all and (max-width: 1199px) {
 .behandelingen .sidebar {padding-left: 0!important; border-left: 0!important;}
