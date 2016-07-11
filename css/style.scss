@@ -133,7 +133,7 @@ html {overflow-y: scroll; height: 100%;}
 body {color: #222222; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
 
 .post .salon {padding-top: 132px; height: 372px!important;}
-.post .salon > div {background: url('/img/interior.png') center center no-repeat; background-size: cover; border-bottom: 1px solid #91191e;}
+.post .salon > div {background: url('/img/interior.jpg') center center no-repeat; background-size: cover; border-bottom: 1px solid #91191e;}
 .page-template .salon, 
 .page-template .salon > div {height: 240px; background-attachment: scroll;}
 
@@ -336,7 +336,7 @@ label {font-weight: normal;}
 @media all and (max-width: 767px) {
   .navbar-default .navbar-collapse {background: #222222; border: none;}
   .navbar-default .navbar-brand {margin: 5px 15px!important;}
-  .post .salon > div {background-image: url('/img/interior.png');}
+  .post .salon > div {background-image: url('/img/interior.jpg');}
   .gallery_images a {display: none;}
   .gallery_images > div a:nth-child(1) {display: inline-block;}
   .gallery_images > div a:nth-child(2) {display: inline-block;}
@@ -357,5 +357,5 @@ label {font-weight: normal;}
   .gallery_images > div a:nth-child(5) {display: none;}
 }
 @media all and (max-width: 450px) {
-  .post .salon > div {background-image: url('/img/interior.png');}
+  .post .salon > div {background-image: url('/img/interior.jpg');}
 }
