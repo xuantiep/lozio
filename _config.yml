@@ -9,7 +9,7 @@ defaults:
     values:
       layout: 'post'
 
-permalink: /blog/:year/:month/:day/:title/
+permalink: /news/:year/:month/:day/:title/
 
 collections:
   members:
