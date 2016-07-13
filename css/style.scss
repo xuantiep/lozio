@@ -129,7 +129,7 @@ html * {max-height:1000000px;}
 .post-content p {max-height: 99999px;}
 
 
-html {overflow-y: scroll; height: 100%;}
+html {overflow-y: scroll; overflow-x: hidden; height: 100%;}
 body {color: #222222; background: #e6e6e1 url('/img/bg_large.jpg') center 76px; font-family: 'BrandonGrotesque-Regular', sans-serif; font-size: 17px; line-height: 1.5em;}
 
 .post .salon {padding-top: 132px; height: 372px!important;}
@@ -313,6 +313,10 @@ label {font-weight: normal;}
 #wrapall, .navbar > div, #lightbox {background: rgba(230,230,225,0.5);}
 
 @media all and (max-width: 1700px) {
+.light.extras:before {left: 50%; margin-left: -850px;}
+.light.extras > div:before {left: 50%; margin-left: 400px;}
+}
+@media all and (max-width: 1000px) {
 .light.extras:before {content: none;}
 .light.extras > div:before {content: none;}
 }
