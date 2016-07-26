@@ -130,7 +130,7 @@ $( document ).ready(function() {
 		    return false;
 		}
 		else if (!$('body').hasClass('home')) {
-			if($(this).attr('href').charAt(0)!='/') $(this).attr('href', '/'+$(this).attr('href'));
+			if($(this).attr('href').charAt(0)!='/' && $(this).attr('href').charAt(0)=='#') $(this).attr('href', '/'+$(this).attr('href'));
 		}
 	});
 
