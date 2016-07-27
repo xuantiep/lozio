@@ -1,5 +1,5 @@
 ---
-title: 'Aperitivo & Music Thursday 4 August'
+title: 'APERITIVO & MUSIC Thursday 4 August'
 image: /aperitivo/poster allison 2.png
 ---
 
@@ -12,5 +12,3 @@ EVERY THURSDAY APERITIVO & LIVE MUSIC
 <br>We serve delicious Italian drinks like Spritz, Hugo and Americano for 10 euro per drink with free use of the buffet!
 
 More info [here](https://www.facebook.com/events/898042270341304/)
-
-&nbsp;
