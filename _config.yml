@@ -11,9 +11,4 @@ defaults:
 
 permalink: /news/:year/:month/:day/:title/
 
-collections:
-  members:
-    output: true
-    permalink: /team/:path/
-
 title: l'Ozio - Italiaanse Restaurant - Ferdinand Bolstraat, 26 - 1072 LK Amsterdam
