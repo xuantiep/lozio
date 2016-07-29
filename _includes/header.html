@@ -15,7 +15,7 @@ if(getParameterByName('url')) {
       <ul class="nav navmenu-nav">
               <li><a href="/#top">Home</a></li>
               <li><a href="/#menu">Menu</a></li>
-              <li {% if page.url == '/catering/' or page.url == '/catering/index.html' %}class="active"{% endif %}><a href="/catering">Catering</a></li>
+              <li {% if page.url == '/catering/' or page.url == '/catering/index.html' %}class="active"{% endif %}><a href="#catering">Catering</a></li>
               <li {% if page.url == '/aperitivo/' or page.url == '/aperitivo/index.html' %}class="active"{% endif %}><a href="/aperitivo">Aperitivo</a></li>
               <li><a href="/#gallery">Gallery</a></li>
               <li {% if page.url == '/about/' or page.url == '/about/index.html' %}class="active"{% endif %}><a href="/about/">About us</a></li>
@@ -38,7 +38,7 @@ if(getParameterByName('url')) {
             <ul class="nav navbar-nav navbar-right">
               <li class="hidden-sm"><a href="#top">Home</a></li>
               <li><a href="#menu">Menu</a></li>
-              <li {% if page.url == '/catering/' or page.url == '/catering/index.html' %}class="active"{% endif %}><a href="/catering">Catering</a></li>
+              <li {% if page.url == '/catering/' or page.url == '/catering/index.html' %}class="active"{% endif %}><a href="#catering">Catering</a></li>
               <li class="hidden-sm {% if page.url == '/aperitivo/' or page.url == '/aperitivo/index.html' %}active{% endif %}"><a href="/aperitivo">Aperitivo</a></li>
               <li><a href="#gallery">Gallery</a></li>
               <li {% if page.url == '/about/' or page.url == '/about/index.html' %}class="active"{% endif %}><a href="/about/">About us</a></li>
