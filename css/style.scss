@@ -197,6 +197,9 @@ footer a, footer a:hover, footer a:focus {color: #222222;}
 .site-footer2 a, .site-footer2 a:hover, .site-footer2 a:focus {color: #222222; font-weight: normal; text-decoration: none;}
 
 .textrow {min-height: 46px; line-height: 1.4em; font-family: 'BrandonGrotesque-Regular', sans-serif; text-transform: uppercase; text-align: center; border-top: 1px solid #91191e; border-bottom: 1px solid #1b6833; background: #e6e6e1; padding: 13px 15px; font-size: 13px; letter-spacing: 1px;}
+.textrow .quote {display: none;}
+.textrow .quote:first-child {display: block;}
+
 .textrow > span.abs {position: absolute; left: 50%; width: 270px; margin-left: -135px; text-align: center;}
 .textrow > div {max-width: 1140px; margin: 0 auto;}
 .absright {width: 200px; float: right; height: 18px;}
