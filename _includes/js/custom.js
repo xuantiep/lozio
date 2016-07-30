@@ -10,6 +10,11 @@ function gallerynext() {
 function galleryprev() {
 	$('.gallery_images > div').prepend($('.gallery_images > div a:nth-child(5)'));
 }
+function quoterandom() {
+	$('.textrow .quote:first-child').each(function() {
+	    $(this).parent().prepend($(this).parent().find('.quote:eq('+Math.floor((Math.random() * $(this).parent().find('.quote').length))+')'));
+	});
+}
 
 function get_cookie(Name) {
     var search = Name + "="
