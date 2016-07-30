@@ -205,6 +205,6 @@ $( document ).ready(function() {
     });
 
     setInterval(function(){ slide(); }, 6000);
-    quoterandom()
+    quoterandom();
     $(window).resize();
 });
