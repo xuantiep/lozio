@@ -5,7 +5,7 @@ slider:
   - image: /img/food.jpg
   - image: /img/interior.jpg
 images:
-  - image: /about/img_9571.jpg
+  - image: /img_9571.jpg
   - image: /dsc_0056.jpg
   - image: /about/img_9597.jpg
   - image: /about/img_9568.jpg
