@@ -16,6 +16,5 @@ images:
   - image: /about/dsc_0109.jpg
   - image: /about/dsc_0043.jpg
   - image: /about/wines-l-ozio.jpg
-  - image: /c0fbd6845801af8bbac1323ffd9a572a.jpg
-  - image:
+  - image: /behoefde bijbaan_02.png
 ---
