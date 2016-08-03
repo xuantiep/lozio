@@ -15,5 +15,6 @@ images:
   - image: /about/dsc_0101.jpg
   - image: /about/dsc_0109.jpg
   - image: /about/dsc_0043.jpg
-  - image: "/about/wines-l-ozio.jpg"
+  - image: /about/wines-l-ozio.jpg
+  - image: /13620793_1211477045549731_4656036938178245594_n.jpg
 ---
