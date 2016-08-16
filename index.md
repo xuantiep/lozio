@@ -16,5 +16,5 @@ images:
   - image: /about/dsc_0109.jpg
   - image: /about/dsc_0043.jpg
   - image: /about/wines-l-ozio.jpg
-  - image: /img/carlo pasta.png
+  - image: /about/carlo pasta.png
 ---
