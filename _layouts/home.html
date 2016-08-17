@@ -43,7 +43,7 @@
                           <h1 class="post-title">Aperitivo</h1>
                         </header>
                       
-                        <div class="post-content"><div class="editable"><p>Aperitivo, ‘the pre-dinner Drink & Bite”, a little something to encourage you to feel hungry, to get the juices flowing, if you will, so you can fully enjoy your upcoming meal. Every day from 17:00 till 20.00 with an open buffet... <a href="/aperitivo">read more ›</a></p><br /></div>
+                        <div class="post-content"><div class="editable"><p>Aperitivo, ‘the pre-dinner Drink & Bite”, a little something to encourage you to feel hungry, to get the juices flowing, if you will, so you can fully enjoy your upcoming meal. Every day from 17:00 till 20.00 with an open buffet... <br /><a href="/aperitivo">read more ›</a></p></div>
 
                           <div class="row">
                             <div class="col-md-6"><h2>News</h2><div><p>For all your news updates, blogs and events.<br />{% for post in site.posts | limit: 3 %}{{ post.date | date: "%d/%m/%Y" }} - <a href="{{ post.url }}" class="blog">{{ post.title | truncate: 30, "..." }}</a><br />{% endfor %}<a href="/news">read more ›</a></p></div></div>
