@@ -41,7 +41,7 @@
                                              
                         {% if post.image %}<p class="featured-image"><img src="//images.weserv.nl/?url=ozioamsterdam.com{{ post.image }}&w=798&h=298&t=square" /></p>{% endif %}
                         <div class="post-content" style="margin-bottom: 70px;">
-                          {{ post.content | truncatewords: 64 }} <a href="{{ post.url }}" class="red">read more ›</a>
+                          {{ post.content | strip_html | truncatewords: 44 }} <a href="{{ post.url }}" class="red">read more ›</a>
                         </div>
 
                 </article>
