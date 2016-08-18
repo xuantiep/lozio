@@ -4,7 +4,7 @@ image: /aperitivo/poster.png
 ---
 
 
-Thursday the 11th of August there is Aperitivo with live music at l'Ozio! Margarida de Amaral Quartet will play Brazilian tunes for us! Come and join us for live music, a drink & a bite!
+Thursday the 18th of August there is Aperitivo with live music at l'Ozio! Margarida de Amaral Quartet will play Brazilian tunes for us! Come and join us for live music, a drink & a bite!
 <br>
 <br>How does it work?
 <br>We serve delicious Italian drinks like Spritz, Hugo and Americano for 10 euro per drink with free use of the buffet!
