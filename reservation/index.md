@@ -1,6 +1,6 @@
 ---
 title: Reservation
-layout: reservation
+layout: page
 ---
 
 
