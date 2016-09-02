@@ -16,5 +16,5 @@ images:
   - image: /uploads/dsc_0017-2.jpg
   - image: /uploads/dsc_0043.jpg
   - image: /uploads/wines-l-ozio.jpg
-  - image: /uploads/downstairs small.jpg
+  - image: /uploads/downstairs-small.jpg
 ---
