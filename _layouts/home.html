@@ -77,7 +77,7 @@ We bring to your home or office everything you need for the occasion... <a href=
                           <h1 class="post-title editable">Gallery</h1>
                         </header>
 
-                        <div class="gallery_images"><span id="prevbutton" onclick="galleryprev()" style="cursor: pointer;">‹</span><div>{% for image in page.images %}<a href="{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=ozioamsterdam.com{{ image.image }}&w=250" /></a>{% endfor %}</div><span id="nextbutton" onclick="gallerynext()" style="cursor: pointer;">›</span></div>
+                        <div class="gallery_images"><span id="prevbutton" onclick="galleryprev()" style="cursor: pointer;">‹</span><div>{% for image in page.images %}<a href="{{ page.url | remove: 'index.html' }}?url={{ image.image }}"><img src="//images.weserv.nl/?url=ozioamsterdam.com{{ image.image }}&w=250&h=167" /></a>{% endfor %}</div><span id="nextbutton" onclick="gallerynext()" style="cursor: pointer;">›</span></div>
 
 
         </article>
